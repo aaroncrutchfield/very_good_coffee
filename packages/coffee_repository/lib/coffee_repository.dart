@@ -5,11 +5,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import 'package:bloc/bloc.dart';
+/// Repository that manages coffee
+library coffee_repository;
 
-class CounterCubit extends Cubit<int> {
-  CounterCubit() : super(0);
-
-  void increment() => emit(state + 1);
-  void decrement() => emit(state - 1);
-}
+export 'src/coffee_repository.dart';
