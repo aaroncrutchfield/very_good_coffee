@@ -65,7 +65,7 @@ void main() {
       },
     );
 
-    // TODO(acrutchfield): Failing - Find snackbar after animation,
+    // TODO(acrutchfield): Failing - Find snackbar after animation, https://github.com/aaroncrutchfield/very_good_coffee/issues/1
     testWidgets(
       'renders SnackBar on FavoriteCoffeeSaved state',
       (widgetTester) async {
