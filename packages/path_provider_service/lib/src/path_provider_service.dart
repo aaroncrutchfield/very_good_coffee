@@ -30,7 +30,8 @@ class PathProviderService {
     );
     final filename = DateFormat('yddMMhhmmss').format(DateTime.now());
     try {
-      return path.getApplicationDocumentsDirectory()
+      return path
+          .getApplicationDocumentsDirectory()
           .then((directory) => '${directory.path}$subDir/$filename.$extension');
     } catch (_) {
       throw GetDirectoryException();
@@ -40,8 +41,8 @@ class PathProviderService {
   /// Returns a list of files
   Future<List<File>> getDirectoryFiles(String subDir) async {
     assert(
-    subDir.isEmpty || subDir.startsWith('/'),
-    'Sub Directory must begin with "/"',
+      subDir.isEmpty || subDir.startsWith('/'),
+      'Sub Directory must begin with "/"',
     );
     final files = <File>[];
     final directory = await path.getApplicationDocumentsDirectory();

@@ -15,7 +15,6 @@ import 'package:network_service/network_service.dart';
 
 import 'network_service_test.mocks.dart';
 
-
 const testPath = '/test';
 const urlPath = 'www.image.com/myImage.jpg';
 const json = {'file': 'www.image.com/myImage.jpg'};
@@ -42,7 +41,8 @@ void main() {
       sut = NetworkService(dio: mockDio, baseUrl: urlPath);
     });
 
-    test('baseUrl set to BaseOptions '
+    test(
+        'baseUrl set to BaseOptions '
         'when instantiated', () {
       verify(mockBaseOptions.baseUrl = urlPath);
     });
@@ -71,7 +71,7 @@ void main() {
 
       test(
           'throws GetRequestException '
-              'when Dio.get throws', () async {
+          'when Dio.get throws', () async {
         when(mockDio.get<Json?>(testPath, options: anyNamed('options')))
             .thenThrow(Exception());
         expect(
@@ -95,13 +95,13 @@ void main() {
       test('succeeds when Dio.download succeeds', () {
         expect(
           sut.download(urlPath, savePath),
-           completes,
+          completes,
         );
       });
 
       test(
           'throws DownloadExceptions '
-              'when dio.download throws', () async {
+          'when dio.download throws', () async {
         when(mockDio.download(urlPath, savePath)).thenThrow(Exception());
         expect(
           sut.download(urlPath, savePath),

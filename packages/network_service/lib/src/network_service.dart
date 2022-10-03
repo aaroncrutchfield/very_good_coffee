@@ -37,7 +37,7 @@ class NetworkService {
   Future<Json?> getJson(String path) async {
     final Json? json;
     try {
-       json = await _dio
+      json = await _dio
           .get<Json?>(path, options: _jsonOptions)
           .then((value) => value.data);
     } catch (_) {
