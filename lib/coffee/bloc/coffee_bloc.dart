@@ -10,7 +10,7 @@ part 'coffee_state.dart';
 
 class CoffeeBloc extends Bloc<CoffeeEvent, CoffeeState> {
   CoffeeBloc(this._coffeeRepository)
-      : super(const CoffeeLoading(null)) {
+      : super(const CoffeeLoading()) {
     on<LoadRandomCoffee>(_loadCoffee);
     on<SaveFavoriteCoffee>(_saveFavoriteCoffee);
     add(const LoadRandomCoffee());
