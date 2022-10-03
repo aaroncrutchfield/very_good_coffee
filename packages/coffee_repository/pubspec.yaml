@@ -1,0 +1,23 @@
+name: coffee_repository
+description: Repository that manages coffee
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: 3.3.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  network_service:
+    path: ../network_service
+  path_provider_service:
+    path: ../path_provider_service
+
+dev_dependencies:
+  build_runner: ^2.2.1
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.3.2
+  very_good_analysis: ^3.1.0

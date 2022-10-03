@@ -3,5 +3,25 @@
     "counterAppBarTitle": "Contador",
     "@counterAppBarTitle": {
         "description": "Texto mostrado en la AppBar de la página del contador"
+    },
+    "appBarTitle": "Muy Buena Cafe",
+    "@appBarTitle": {
+        "description": "Texto mostrado en la AppBar"
+    },
+    "coffeeTabLabel": "Cafe",
+    "@coffeeTabLabel": {
+        "description": "Texto que se muestra en la pestaña Café"
+    },
+    "favoritesTabLabel": "Favoritos",
+    "@favoritesTabLabel": {
+        "description": "Texto que se muestra en la pestaña Favoritos"
+    },
+    "refreshButtonLabel": "Refresh",
+    "@refreshButtonLabel": {
+        "description": "Texto que se muestra en el botón Actualizar"
+    },
+    "favoriteSavedMessage": "Favorito guardado",
+    "@favoriteSavedMessage": {
+        "description": "Texto que se muestra cuando se guarda un favorito"
     }
 }

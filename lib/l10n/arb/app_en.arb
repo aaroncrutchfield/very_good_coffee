@@ -3,5 +3,25 @@
     "counterAppBarTitle": "Counter",
     "@counterAppBarTitle": {
         "description": "Text shown in the AppBar of the Counter Page"
+    },
+    "appBarTitle": "Very Good Coffee",
+    "@appBarTitle": {
+        "description": "Text shown in the AppBar"
+    },
+    "coffeeTabLabel": "Coffee",
+    "@coffeeTabLabel": {
+        "description": "Text shown on the Coffee tab"
+    },
+    "favoritesTabLabel": "Favorites",
+    "@favoritesTabLabel": {
+        "description": "Text shown on the Favorites tab"
+    },
+    "refreshButtonLabel": "Refresh",
+    "@refreshButtonLabel": {
+        "description": "Text shown on the Refresh button"
+    },
+    "favoriteSavedMessage": "Favorite saved",
+    "@favoriteSavedMessage": {
+        "description": "Text shown when a favorite is saved"
     }
 }

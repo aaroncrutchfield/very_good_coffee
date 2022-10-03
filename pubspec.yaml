@@ -9,19 +9,29 @@ environment:
 
 dependencies:
   bloc: ^8.1.0
+  coffee_repository:
+    path: packages/coffee_repository
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
+  freezed: ^2.1.0+1
+  freezed_annotation: ^2.1.0
+  google_fonts: ^3.0.1
   intl: ^0.17.0
+  network_service:
+    path: packages/network_service
+  path_provider_service:
+    path: packages/path_provider_service
 
 dev_dependencies:
   bloc_test: ^9.1.0
+  build_runner: ^2.2.1
   flutter_test:
     sdk: flutter
-  mocktail: ^0.3.0
-  very_good_analysis: ^3.0.2
+  mockito: ^5.3.2
+  very_good_analysis: ^3.1.0
 
 flutter:
   uses-material-design: true
