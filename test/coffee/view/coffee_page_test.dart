@@ -65,7 +65,7 @@ void main() {
       },
     );
 
-    // TODO: Failing - Find snackbar after animation
+    // TODO(acrutchfield): Failing - Find snackbar after animation,
     testWidgets(
       'renders SnackBar on FavoriteCoffeeSaved state',
       (widgetTester) async {
