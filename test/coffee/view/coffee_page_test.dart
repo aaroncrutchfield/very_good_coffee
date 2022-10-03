@@ -69,7 +69,9 @@ void main() {
     // testWidgets(
     //   'renders SnackBar on FavoriteCoffeeSaved state',
     //   (widgetTester) async {
-    //     when(coffeeBloc.state).thenReturn(const FavoriteCoffeeSaved(imageUrl));
+    //     when(coffeeBloc.state).thenReturn(
+    //       const FavoriteCoffeeSaved(imageUrl),
+    //     );
     //     await widgetTester.pumpApp(blocProvider);
     //     await widgetTester.tap(find.byType(SnackBar));
     //     expect(find.byType(SnackBar), findsOneWidget);
