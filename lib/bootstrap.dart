@@ -13,16 +13,10 @@ import 'package:flutter/widgets.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
-  void onChange(BlocBase<dynamic> bloc, Change<dynamic> change) {
-    super.onChange(bloc, change);
-    // log('onChange(${bloc.runtimeType}');
-    // log('\tcurrentState: ${change.currentState}');
-    // log('\tnextState: ${change.nextState}');
-    // log(')');
-  }
-
-  @override
-  void onTransition(Bloc bloc, Transition transition) {
+  void onTransition(
+    Bloc<dynamic, dynamic> bloc,
+    Transition<dynamic, dynamic> transition,
+  ) {
     super.onTransition(bloc, transition);
     log('onChange(${bloc.runtimeType}');
     log('\tcurrentState: ${transition.currentState}');
