@@ -34,26 +34,35 @@ class App extends StatelessWidget {
           ),
         ),
       ],
-      child: MaterialApp(
-        theme: ThemeData(
-          appBarTheme: const AppBarTheme(color: appBarColor),
-          colorScheme: ColorScheme.fromSwatch(
-            accentColor: accentColor,
-          ),
-        ),
-        localizationsDelegates: const [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-        ],
-        supportedLocales: AppLocalizations.supportedLocales,
-        home: const TabView(),
-      ),
+      child: const AppView(),
     );
   }
 }
 
-class TabView extends StatelessWidget {
-  const TabView({super.key});
+class AppView extends StatelessWidget {
+  const AppView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(color: appBarColor),
+        colorScheme: ColorScheme.fromSwatch(
+          accentColor: accentColor,
+        ),
+      ),
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+      ],
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: const CoffeeTabView(),
+    );
+  }
+}
+
+class CoffeeTabView extends StatelessWidget {
+  const CoffeeTabView({super.key});
 
   @override
   Widget build(BuildContext context) {

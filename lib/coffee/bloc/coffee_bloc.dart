@@ -31,6 +31,6 @@ class CoffeeBloc extends Bloc<CoffeeEvent, CoffeeState> {
   ) async {
     await _coffeeRepository.saveImage(event.imageUrl);
 
-    emit(FavoriteCoffeeSaved(state.imageUrl));
+    emit(FavoriteCoffeeSaved(event.imageUrl));
   }
 }

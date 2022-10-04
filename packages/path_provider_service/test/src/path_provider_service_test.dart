@@ -10,5 +10,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
+  // How to mock PathProviderServiceBehavior?
+  // The 3rd party library uses static methods
   group('PathProviderService', () {});
 }

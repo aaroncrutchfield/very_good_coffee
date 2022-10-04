@@ -55,12 +55,3 @@ class PathProviderService {
     return files;
   }
 }
-
-// /// A wrapper class for path_provider.dart static methods
-// class PathProviderWrapper {
-//
-//   /// Retrieves the applicationDocumentDirectory from the path_provider library
-//   Future<Directory> getApplicationDocumentsDirectory() {
-//     return path.getApplicationDocumentsDirectory();
-//   }
-// }
